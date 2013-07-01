@@ -1,3 +1,3 @@
-Publications
+REhint's Publications
 ============
-REhints conferences slides and white-papers
+conferences slides and white-papers
