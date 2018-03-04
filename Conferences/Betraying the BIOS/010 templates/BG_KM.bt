@@ -1,0 +1,51 @@
+typedef struct
+{
+    UINT16      Size;
+    UBYTE       Hash[32] <bgcolor=cLtYellow>;
+}KEY_HASH;
+
+
+typedef struct  
+{
+    UBYTE       Unknown8;
+    UINT16      Size;
+    UINT32      Exp <bgcolor=cLtRed>;
+    UBYTE       PubKey[256] <bgcolor=cLtBlue>;
+}RSA_PUBLIC_KEY;
+
+
+typedef struct 
+{
+    UINT16      KeySize;
+    UINT16      Unknown16;
+    UBYTE       RsaSignature[256];
+}RSA_SIGNATURE;
+
+
+typedef struct 
+{
+    RSA_PUBLIC_KEY      Key;
+    UINT16              Unknown16 ;
+    RSA_SIGNATURE       Signature <bgcolor=cLtRed>;
+}KEY_RSA;
+
+
+typedef struct
+{
+	UBYTE           Signature[8] <bgcolor=cLtGreen>;   // ‘__KEYM__’
+	UBYTE           Unknown;       
+	UBYTE           Unknown1;     
+	UBYTE           KmSvn;      
+	UBYTE           Unknown2; 
+    UBYTE           Unknown3;
+    UINT16          Unknown4;
+	KEY_HASH        IbbmPubKeyHash;    // SHA256 from IBBM public key
+    UBYTE           Unknown4;
+    UINT16          Unknown5;
+	KEY_RSA         OemPubKey;
+}BOOT_GUARD_KEY_MANIFEST;
+
+
+// parser code
+BOOT_GUARD_KEY_MANIFEST BGKM <bgcolor=cLtGray>;
+

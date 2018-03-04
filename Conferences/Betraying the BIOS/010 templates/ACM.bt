@@ -1,0 +1,20 @@
+typedef struct {
+    UINT32 ModuleType;
+    UINT32 HeaderType;
+    UINT32 Unknown[2];
+    UINT32 ModuleVendor;
+    UINT32 Date;
+    UINT32 ModuleSize;
+    UINT16 AcmSvn;
+    UINT16 Unknown1;
+    UINT32 Unknown2[5];
+    UINT32 EntryPoint <bgcolor=cLtYellow>;
+    UBYTE  Unknown3[64];
+    UINT32 KeySize;
+    UINT32 Unknown4;
+    UBYTE  RsaPubKey[256] <bgcolor=cLtBlue>;
+    UINT32 RsaPubExp <bgcolor=cLtYellow>;
+    UBYTE  RsaSig[256] <bgcolor=cLtRed>;
+} ACM_HEADER;
+
+ACM_HEADER ACM <bgcolor=cLtGray>;

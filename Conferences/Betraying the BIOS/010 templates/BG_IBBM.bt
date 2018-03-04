@@ -1,0 +1,92 @@
+typedef struct {
+    UBYTE  Signature[8]; // __ACBP__
+    UBYTE  Unknown;
+    UBYTE  Unknown2;
+    UBYTE  Unknown3;
+    UBYTE  Unknown4;
+    UBYTE  AcmSvn;
+    UBYTE  Unknown5;
+    UINT16 Unknown6;
+} BOOT_POLICY_MANIFEST_HEADER;
+
+/////////////////////////////////////////////////////
+typedef struct {
+    UBYTE  Unknown[2];
+    UINT16 Unknown1;
+    UINT32 Base;
+    UINT32 Size;
+} IBB_SEGMENT; 
+
+typedef struct
+{
+    UINT16      Size;
+    UBYTE       Hash[32];
+}KEY_HASH;
+
+typedef struct {
+    UBYTE               Signature[8]; // __IBBS__
+    UBYTE               Unknown;
+    UBYTE               Unknown1[2];
+    UBYTE               Unknown2;
+    UINT32              Unknown3;
+    UINT64              Unknown4;
+    UINT64              VtdBar;
+    UINT32              Unknown5;
+    UINT32              Unknown6;
+    UINT64              Unknown7[2];
+    UINT16              Unknown8;
+    KEY_HASH            IbbHash <bgcolor=cLtRed>;
+    UINT32              EntryPoint <bgcolor=cLtRed>;
+    KEY_HASH            SigHash <bgcolor=cLtYellow>;
+    UBYTE               SegmentNum <bgcolor=cLtRed>;
+    IBB_SEGMENT         IbbSegment[4] <bgcolor=cLtGreen>;
+} IBB_ELEMENT;
+
+/////////////////////////////////////////////////////
+typedef struct {
+    UBYTE  Signature[8]; // __PMDA__
+    UBYTE  Version;
+    UINT16 Size;
+} PLATFORM_MANUFACTURER;
+
+typedef struct  
+{
+    UBYTE       Unknown8;
+    UINT16      Size;
+    UINT32      Exp <bgcolor=cLtRed>;
+    UBYTE       PubKey[256] <bgcolor=cLtBlue>;
+}RSA_PUBLIC_KEY;
+
+typedef struct 
+{
+    UINT16      KeySize;
+    UINT16      Unknown16;
+    UBYTE       RsaSignature[256] ;
+}RSA_SIGNATURE;
+
+typedef struct 
+{
+    RSA_PUBLIC_KEY      Key;
+    UINT16              Unknown16;
+    RSA_SIGNATURE       Signature <bgcolor=cLtRed>;
+}KEY_RSA;
+
+
+
+
+typedef struct {
+    UBYTE                Signature[8]; // __PMSG__
+    UBYTE                Version;
+    KEY_RSA              RsaKey;
+} BOOT_POLICY_MANIFEST_SIGNATURE;
+
+/////////////////////////////////////////////////////
+
+typedef struct {
+    BOOT_POLICY_MANIFEST_HEADER     Hdr;
+    IBB_ELEMENT                     IBBS;
+    PLATFORM_MANUFACTURER           PM;
+    BOOT_POLICY_MANIFEST_SIGNATURE  BPMS;
+} BOOT_POLICY_MANIFEST;
+
+BOOT_POLICY_MANIFEST BPM;
