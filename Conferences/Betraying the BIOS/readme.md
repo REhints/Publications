@@ -10,7 +10,7 @@ This talk is a revisited version of the Black Hat Vegas 2017 research with new d
 * **H2HC 2017**
 * **Blue Hat 2017 (Revisited Version)** [video](https://www.youtube.com/watch?v=a2A-iuAGkSM)
 * **ZeroNights (Revisited Version)** [slides](https://github.com/REhints/Publications/blob/master/Conferences/Betraying%20the%20BIOS/ZeroNights_17%5Bv1.5%5D.pdf) [video](https://www.youtube.com/watch?v=mTuA68JHJdw)
-* **Offensivecon 2018 (Updated and Revisited Version)** [slides](https://github.com/REhints/Publications/blob/master/Conferences/Betraying%20the%20BIOS/Offensivecon_18%5Bv2.0%5D.pdf)
+* **Offensivecon 2018 (Updated and Revisited Version)** [slides](https://github.com/REhints/Publications/blob/master/Conferences/Betraying%20the%20BIOS/Offensivecon_18%5Bv2.0%5D.pdf) [video](https://www.youtube.com/watch?v=kSQVGFbTfqE)
 
 ## References:
 * **Who Watch BIOS Watchers?** [link](https://medium.com/@matrosov/bypass-intel-boot-guard-cc05edfca3a9)
