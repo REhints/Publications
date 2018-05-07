@@ -55,8 +55,9 @@ typedef struct BG_MICROSOFT_PMDA_ENTRY_
 #define INTEL_ACM_MODULE_VENDOR 0x8086
 
 typedef struct INTEL_ACM_HEADER_ {
-    UINT32 ModuleType;
-    UINT32 HeaderType;
+    UINT16 ModuleType;
+    UINT16 ModuleSubType;
+    UINT32 HeaderSize;
     UINT32 HeaderVersion;
     UINT16 ChipsetId;
     UINT16 Flags;
@@ -66,16 +67,16 @@ typedef struct INTEL_ACM_HEADER_ {
     UINT16 DateYear;
     UINT32 ModuleSize;
     UINT16 AcmSvn;
-    UINT16 : 16;
-    UINT32 Unknown1;
-    UINT32 Unknown2;
+    UINT16 SeSvn;
+    UINT32 CodeControlFlags;
+    UINT32 ErrorEntryPoint;
     UINT32 GdtMax;
     UINT32 GdtBase;
     UINT32 SegmentSel;
     UINT32 EntryPoint;
-    UINT8  Unknown3[64];
+    UINT8  Reserved1[64];
     UINT32 KeySize;
-    UINT32 Unknown4;
+    UINT32 ScratchSpaceSize;
     UINT8  RsaPubKey[256];
     UINT32 RsaPubExp;
     UINT8  RsaSig[256];
