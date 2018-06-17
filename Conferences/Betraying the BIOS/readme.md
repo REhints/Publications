@@ -7,7 +7,7 @@ This talk is a revisited version of the Black Hat Vegas 2017 research with new d
 
 ## Conferences:
 * **Black Hat Vegas 2017** [slides](https://github.com/REhints/BlackHat_2017/blob/master/Betraying%20the%20BIOS.pdf) [video](https://www.youtube.com/watch?v=Dfl2JI2eLc8)
-* **H2HC 2017**
+* **H2HC 2017** [video](https://www.youtube.com/watch?v=jQyzhXQexrQ)
 * **Blue Hat 2017 (Revisited Version)** [video](https://www.youtube.com/watch?v=a2A-iuAGkSM)
 * **ZeroNights (Revisited Version)** [slides](https://github.com/REhints/Publications/blob/master/Conferences/Betraying%20the%20BIOS/ZeroNights_17%5Bv1.5%5D.pdf) [video](https://www.youtube.com/watch?v=mTuA68JHJdw)
 * **Offensivecon 2018 (Updated and Revisited Version)** [slides](https://github.com/REhints/Publications/blob/master/Conferences/Betraying%20the%20BIOS/Offensivecon_18%5Bv2.0%5D.pdf) [video](https://www.youtube.com/watch?v=kSQVGFbTfqE)
