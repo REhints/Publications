@@ -8,4 +8,4 @@ In this presentation, I'll explain new security issues to bypass a specific impl
 * [Offensivecon 2019](https://www.offensivecon.org/speakers/2019/alex-matrosov.html) [video](https://www.youtube.com/watch?v=Ap-2CnoyBek)
 * Amazon Red Team Summit [RTS 2019](https://redteamsummit.com)
 * [BHASIA 2019](https://www.blackhat.com/asia-19/briefings/schedule/#modern-secure-boot-attacks-bypassing-hardware-root-of-trust-from-software-13950)
-* [OPCDE 2019](https://emirates.opcde.com/speaker/alex-matrosov/)
+* [OPCDE 2019](https://emirates.opcde.com/speaker/alex-matrosov/) [video](https://www.youtube.com/watch?v=TuaP7fG4_rk)
