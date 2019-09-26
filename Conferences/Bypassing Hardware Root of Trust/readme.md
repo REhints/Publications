@@ -9,3 +9,4 @@ In this presentation, I'll explain new security issues to bypass a specific impl
 * Amazon Red Team Summit [RTS 2019](https://redteamsummit.com)
 * [BHASIA 2019](https://www.blackhat.com/asia-19/briefings/schedule/#modern-secure-boot-attacks-bypassing-hardware-root-of-trust-from-software-13950)
 * [OPCDE 2019](https://emirates.opcde.com/speaker/alex-matrosov/) [video](https://www.youtube.com/watch?v=TuaP7fG4_rk)
+* [Ekoparty 15](http://ekoparty.org/editions/eko15/charlas/bypassing-root-trust.php)
