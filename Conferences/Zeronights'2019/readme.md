@@ -4,5 +4,5 @@ In nowadays, I don’t know any hardware vendor who develops all the components 
 
 In most of the cases, hardware vendor separate threat model and security boundaries for each hardware component present on the platform but in reality it misses a lot of details which is directly reflected on platform security. This talk will look through the prism security problems and vulnerabilities created over those architecture design mistakes.
 
-[zeronights link](https://zeronights.ru/report-en/hardware-security-is-hard-how-hardware-boundaries-define-platform-security/)
-[video recording](https://www.youtube.com/watch?v=ovGDHgG5pGw)
+* [zeronights link](https://zeronights.ru/report-en/hardware-security-is-hard-how-hardware-boundaries-define-platform-security/)
+* [video recording](https://www.youtube.com/watch?v=ovGDHgG5pGw)
